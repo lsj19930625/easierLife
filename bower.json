@@ -1,0 +1,16 @@
+{
+  "name": "easierlife",
+  "description": "vue,express,mongodb",
+  "main": "index.js",
+  "authors": [
+    "SerioUS"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "vue": "^1.0.26",
+    "vue-router": "^0.7.13",
+    "bootstrap": "^3.3.7",
+    "vue-resource": "^0.9.3"
+  }
+}

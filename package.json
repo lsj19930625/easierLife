@@ -1,0 +1,15 @@
+{
+  "name": "easierlife",
+  "version": "1.0.0",
+  "description": "vue,express,mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SerioUS",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8"
+  }
+}
