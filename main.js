@@ -1,12 +1,14 @@
 const express = require("express");
 const port = process.env.PORT || 3000;
 const path = require('path');
+const bodyParser = require('body-parser');
 const app = express();
 // app.set("views","../easierLife/app/");
 // app.set('view engine','html');
 //const router = express.Router();
 app.use(express.static(path.join(__dirname, 'app')));
-
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.get('/', (req, res) => {
   // r.table("projects").orderBy('createdAt').run().then(result => {
   //   res.send(result)
@@ -23,7 +25,8 @@ app.get('/', (req, res) => {
 })
 
 app.post("/login",function(req, res){
-  console.log(req);
+  console.log(req.body.userName);
+  res.json(req.body)
   //res.json({msg:"got it"});
   //res.send(req);
 });
